@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>resetter</servlet-name>
+  	<display-name>resetter</display-name>
+  	<description></description>
+  	<servlet-class>servlet.resetter</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>hellotest</servlet-name>
+  	<display-name>hellotest</display-name>
+  	<description></description>
+  	<servlet-class>servlet.hellotest</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>answer_checker</servlet-name>
+  	<display-name>answer_checker</display-name>
+  	<description></description>
+  	<servlet-class>servlet.answer_checker</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>resetter</servlet-name>
+  	<url-pattern>/resetter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>hellotest</servlet-name>
+  	<url-pattern>/hellotest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>answer_checker</servlet-name>
+  	<url-pattern>/answer_checker</url-pattern>
+  </servlet-mapping>
+</web-app>
