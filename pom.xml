@@ -27,6 +27,13 @@
     <version>3.1.0</version>
     <scope>provided</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.github.yaroslavyadrov.textshuffler/textshuffler -->
+<dependency>
+    <groupId>com.github.yaroslavyadrov.textshuffler</groupId>
+    <artifactId>textshuffler</artifactId>
+    <version>1.0.0</version>
+	</dependency>
+
     
   </dependencies>
   <build>

@@ -13,9 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class answer_checker
- */
+import com.github.yaroslavyadrov.textshuffler.TextShuffler;
+
 public class answer_checker extends HttpServlet {
 	int counter = 0;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -57,5 +56,4 @@ public class answer_checker extends HttpServlet {
     	PrintWriter out = resp.getWriter();
     	out.println("data = " + counter);
     }
-
 }

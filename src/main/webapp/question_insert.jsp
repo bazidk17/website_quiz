@@ -16,7 +16,7 @@ Class.forName("com.mysql.jdbc.Driver");
 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_quiz_ise", "root", "");
 Statement st=conn.createStatement();
 
-int i=st.executeUpdate("insert into question_answers (question,option1,option2,option3,option4,correct_answer) values('"+question+"','"+option1+"','"+option2+"','"+option3+"','"+option4+"','"+correct+"');");
+int i=st.executeUpdate("insert into question_answers (question,option1,option2,option3,option4,correct) values('"+question+"','"+option1+"','"+option2+"','"+option3+"','"+option4+"','"+correct+"');");
 response.sendRedirect("success_add.jsp");
 }
 catch(Exception e)

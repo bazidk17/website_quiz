@@ -1,23 +1,26 @@
 package servlet;
-
+ 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.github.yaroslavyadrov.textshuffler.*;
+ 
 /**
- * Servlet implementation class hellotest
+ * @author Crunchify.com
  */
+ 
 public class hellotest extends HttpServlet {
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int count = 0;
         int max = 0;
         int marks = 0;
@@ -36,7 +39,7 @@ public class hellotest extends HttpServlet {
         	out.println("You have attempted all questions");
         	out.println("Marks scored = " + hs.getAttribute("marks").toString());
         	out.println(
-        			"<a href=\"reset\"> Reset </a>" +
+        			"<a href=\"resetter\"> Reset </a>" +
         			"</body>"+
         			"</html>"
         				);
@@ -111,5 +114,4 @@ public class hellotest extends HttpServlet {
     	//super.doPost(req, resp);
     	PrintWriter out = resp.getWriter();
     }
-
 }
